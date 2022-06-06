@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Restaurante</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="header">
+      <a href="#" class="logo"> <i class="fas fa-utensils"></i> food. </a>
+      <nav class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre</a>
+        <a href="#food">Comidas</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Pedidos</a>
+        <a href="#blogs">Blog</a>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-1.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>comida gourmet</span>
+              <h3>cozinha deliciosa</h3>
+              <a href="#" class="btn">Conheça</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-2.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>comida gourmet</span>
+              <h3>momento da manhã</h3>
+              <a href="#" class="btn">Conheça</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-3.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>comida gourmet</span>
+              <h3>cozinha autêntica</h3>
+              <a href="#" class="btn">Conheça</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="image">
+        <img src="images/about-img.png" alt="" />
+      </div>
+      <div class="content">
+        <h3 class="title">Bem-vindo ao Nosso Restaurante</h3>
+        <p>
+          Quisque a sapien nisl. Fusce aliquet dictum lectus vitae mattis.
+          Vivamus in ipsum nec tortor suscipit varius sit amet quis tortor. Ut
+          ultrices sagittis purus, quis porta est laoreet eget.
+        </p>
+        <a href="#" class="btn">Ver Mais</a>
+        <div class="icons-container">
+          <div class="icons">
+            <img src="images/about-icon-1.png" alt="" />
+            <h3>comida de qualidade</h3>
+          </div>
+          <div class="icons">
+            <img src="images/about-icon-2.png" alt="" />
+            <h3>comida & bebidas</h3>
+          </div>
+          <div class="icons">
+            <img src="images/about-icon-3.png" alt="" />
+            <h3>Chefs experientes</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food -->
+    <section class="food" id="food">
+      <div class="heading">
+        <span>pratos populares</span>
+        <h3>deliciosas comidas</h3>
+      </div>
+      <div class="swiper food-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide" data-name="food-1">
+            <img src="images/food-img-1.png" alt="" />
+            <h3>deliciosas comidas</h3>
+            <div class="price">R$49.99</div>
+          </div>
+          <div class="swiper-slide slide" data-name="food-2">
+            <img src="images/food-img-2.png" alt="" />
+            <h3>deliciosas comidas</h3>
+            <div class="price">R$29.99</div>
+          </div>
+          <div class="swiper-slide slide" data-name="food-3">
+            <img src="images/food-img-3.png" alt="" />
+            <h3>deliciosas comidas</h3>
+            <div class="price">R$59.99</div>
+          </div>
+          <div class="swiper-slide slide" data-name="food-4">
+            <img src="images/food-img-4.png" alt="" />
+            <h3>deliciosas comidas</h3>
+            <div class="price">R$69.99</div>
+          </div>
+          <div class="swiper-slide slide" data-name="food-5">
+            <img src="images/food-img-5.png" alt="" />
+            <h3>deliciosas comidas</h3>
+            <div class="price">R$79.99</div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Food Preview -->
+    <section class="food-preview-container">
+      <div id="close-preview" class="fas fa-times"></div>
+      <div class="food-preview" data-target="food-1">
+        <img src="images/food-img-1.png" alt="" />
+        <h3>comidas deliciosas</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          In vehicula facilisis feugiat. Morbi ut velit tristique, facilisis
+          erat nec, porta justo.
+        </p>
+        <div class="price">R$19.99</div>
+        <a href="#" class="btn">compre agora!</a>
+      </div>
+      <div class="food-preview" data-target="food-2">
+        <img src="images/food-img-2.png" alt="" />
+        <h3>comidas deliciosas</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          In vehicula facilisis feugiat. Morbi ut velit tristique, facilisis
+          erat nec, porta justo.
+        </p>
+        <div class="price">R$59.99</div>
+        <a href="#" class="btn">compre agora!</a>
+      </div>
+      <div class="food-preview" data-target="food-3">
+        <img src="images/food-img-3.png" alt="" />
+        <h3>comidas deliciosas</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          In vehicula facilisis feugiat. Morbi ut velit tristique, facilisis
+          erat nec, porta justo.
+        </p>
+        <div class="price">R$49.99</div>
+        <a href="#" class="btn">compre agora!</a>
+      </div>
+      <div class="food-preview" data-target="food-4">
+        <img src="images/food-img-4.png" alt="" />
+        <h3>comidas deliciosas</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          In vehicula facilisis feugiat. Morbi ut velit tristique, facilisis
+          erat nec, porta justo.
+        </p>
+        <div class="price">R$39.99</div>
+        <a href="#" class="btn">compre agora!</a>
+      </div>
+      <div class="food-preview" data-target="food-5">
+        <img src="images/food-img-5.png" alt="" />
+        <h3>comidas deliciosas</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>
+          In vehicula facilisis feugiat. Morbi ut velit tristique, facilisis
+          erat nec, porta justo.
+        </p>
+        <div class="price">R$29.99</div>
+        <a href="#" class="btn">compre agora!</a>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="heading">
+        <span>Galeria</span>
+        <h3>nossas histórias</h3>
+      </div>
+      <div class="gallery-container">
+        <a href="images/food-galler-img-1.jpg" class="box">
+          <img src="images/food-galler-img-1.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-2.jpg" class="box">
+          <img src="images/food-galler-img-2.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-3.jpg" class="box">
+          <img src="images/food-galler-img-3.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-4.jpg" class="box">
+          <img src="images/food-galler-img-4.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-5.jpg" class="box">
+          <img src="images/food-galler-img-5.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+        <a href="images/food-galler-img-6.jpg" class="box">
+          <img src="images/food-galler-img-6.jpg" alt="" />
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+      <div class="heading">
+        <span>Menu</span>
+        <h3>pratos populares</h3>
+      </div>
+      <div class="swiper menu-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <h3 class="title">café da manhã</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>Café da manhã</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Café da manhã</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Café da manhã</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Café da manhã</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Café da manhã</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>Café da manhã</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h3 class="title">lunch</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>almoço delicioso</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>almoço delicioso</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>almoço delicioso</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>almoço delicioso</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h3 class="title">dinner</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>jantar delicioso</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>jantar delicioso</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>jantar delicioso</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>jantar delicioso</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>jantar delicioso</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h3 class="title">bebidas</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>bebidas frias</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>bebidas frias</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>bebidas frias</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>bebidas frias</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>bebidas frias</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>bebidas frias</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <h3 class="title">sobremesa</h3>
+            <div class="box-container">
+              <div class="box">
+                <div class="info">
+                  <h3>sobremesas doces</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>sobremesas doces</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>sobremesas doces</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+              <div class="box">
+                <div class="info">
+                  <h3>sobremesas doces</h3>
+                  <p>
+                    In vehicula facilisis feugiat. Morbi ut velit tristique,
+                    facilisis erat nec, porta justo.
+                  </p>
+                </div>
+                <div class="price">R$39.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="order" id="order">
+      <div class="heading">
+        <span>Pedido</span>
+        <h3>entrega rápida</h3>
+      </div>
+      <form action="">
+        <div class="box-container">
+          <div class="box">
+            <div class="inputBox">
+              <span>nome completo</span>
+              <input type="text" placeholder="seu nome" />
+            </div>
+            <div class="inputBox">
+              <span>nome da comida</span>
+              <input type="text" placeholder="seu pedido" />
+            </div>
+            <div class="inputBox">
+              <span>detalhes do pedido</span>
+              <input type="text" placeholder="detalhe do pedido" />
+            </div>
+            <div class="inputBox">
+              <span>endereço</span>
+              <textarea
+                name=""
+                placeholder="seu endereço"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <div class="box">
+            <div class="inputBox">
+              <span>número</span>
+              <input type="number" placeholder="numero" />
+            </div>
+            <div class="inputBox">
+              <span>quantidade</span>
+              <input type="number" placeholder="quantidade" />
+            </div>
+            <div class="inputBox">
+              <span>quando você quiser</span>
+              <input type="datetime-local" />
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Enviar" class="btn" />
+      </form>
+    </section>
+
+    <!-- Blog -->
+    <section class="blogs" id="blogs">
+      <div class="heading">
+        <span>Nosso Blog</span>
+        <h3>últimas postagens</h3>
+      </div>
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-1.jpg" alt="" />
+              <span>hambúrguer</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href="#"> <i class="fas fa-calendar"></i> 01/01/2022 </a>
+                <a href="#"> <i class="fas fa-user"></i> Eu </a>
+              </div>
+              <a href="#" class="title">título</a>
+              <p>
+                In vehicula facilisis feugiat. Morbi ut velit tristique,
+                facilisis erat nec, porta justo.
+              </p>
+              <a href="#" class="btn">Ver Mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-2.jpg" alt="" />
+              <span>sanduíche</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href="#"> <i class="fas fa-calendar"></i> 01/01/2022 </a>
+                <a href="#"> <i class="fas fa-user"></i> Eu </a>
+              </div>
+              <a href="#" class="title">título</a>
+              <p>
+                In vehicula facilisis feugiat. Morbi ut velit tristique,
+                facilisis erat nec, porta justo.
+              </p>
+              <a href="#" class="btn">Ver Mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-3.jpg" alt="" />
+              <span>frango</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href="#"> <i class="fas fa-calendar"></i> 01/01/2022 </a>
+                <a href="#"> <i class="fas fa-user"></i> Eu </a>
+              </div>
+              <a href="#" class="title">título</a>
+              <p>
+                In vehicula facilisis feugiat. Morbi ut velit tristique,
+                facilisis erat nec, porta justo.
+              </p>
+              <a href="#" class="btn">Ver Mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-4.jpg" alt="" />
+              <span>sorvete</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href="#"> <i class="fas fa-calendar"></i> 01/01/2022 </a>
+                <a href="#"> <i class="fas fa-user"></i> Eu </a>
+              </div>
+              <a href="#" class="title">título</a>
+              <p>
+                In vehicula facilisis feugiat. Morbi ut velit tristique,
+                facilisis erat nec, porta justo.
+              </p>
+              <a href="#" class="btn">Ver Mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-5.jpg" alt="" />
+              <span>pizza</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href="#"> <i class="fas fa-calendar"></i> 01/01/2022 </a>
+                <a href="#"> <i class="fas fa-user"></i> Eu </a>
+              </div>
+              <a href="#" class="title">título</a>
+              <p>
+                In vehicula facilisis feugiat. Morbi ut velit tristique,
+                facilisis erat nec, porta justo.
+              </p>
+              <a href="#" class="btn">Ver Mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-img-6.jpg" alt="" />
+              <span>café</span>
+            </div>
+            <div class="content">
+              <div class="icon">
+                <a href="#"> <i class="fas fa-calendar"></i> 01/01/2022 </a>
+                <a href="#"> <i class="fas fa-user"></i> Eu </a>
+              </div>
+              <a href="#" class="title">título</a>
+              <p>
+                In vehicula facilisis feugiat. Morbi ut velit tristique,
+                facilisis erat nec, porta justo.
+              </p>
+              <a href="#" class="btn">Ver Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-clock"></i>
+          <h3>aberto das</h3>
+          <p>07:00 a 22:00</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>telefone</h3>
+          <p>99-8888-7777</p>
+          <p>66-5555-4444</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <p>exemplo1@gmail.com</p>
+          <p>exemplo2@gmail.com</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>endereço</h3>
+          <p>São Paulo, Brasil - 123456</p>
+        </div>
+      </div>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      lightGallery(document.querySelector(".gallery .gallery-container"));
+    </script>
+  </body>
+</html>
